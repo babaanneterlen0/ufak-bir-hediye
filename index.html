@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günün Kutlu Olsun!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #e91e63;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .kanka {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 1.2em;
+        }
+
+        .balloon {
+            display: inline-block;
+            font-size: 2em;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .balloon:nth-child(2) { animation-delay: 0.5s; }
+        .balloon:nth-child(3) { animation-delay: 1s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="balloons">
+            <div class="balloon">🎈</div>
+            <div class="balloon">🎉</div>
+            <div class="balloon">🎂</div>
+        </div>
+        
+        <h1>Doğum Günün Kutlu Olsun!</h1>
+        
+        <div class="message">
+            Nice mutlu, sağlıklı ve eğlenceli yıllara!<br>
+            İyi ki doğdun <span class="kanka">KANKAM!</span> 🎊
+        </div>
+        
+        <div class="balloons">
+            <div class="balloon">🎁</div>
+            <div class="balloon">✨</div>
+            <div class="balloon">🎊</div>
+        </div>
+    </div>
+</body>
+</html>
